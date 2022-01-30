@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>OpenBootcamp Alumnos</title>
+
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/select2.css">
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/select2.js"></script>
+    
+    <script type="text/javascript" src="javascript/java.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row contenedor">
+            <div class="col-md-12" id="principal">
+                <div class="panel-body" id="formulario">
+                    <form role="form" id="form" method="POST" action="#">
+                        <div class="form-group row">
+                            <img src="image/Captura.PNG" class="img-responsive" alt="Responsive image" id="imagenlogo">
+                            <div class="col-sm-8" id="alumnonuevo">
+                                <h2>David Perez</h2>
+                                <h6><img src="image/ubicacion.png" class="img-responsive" alt="Responsive image"
+                                        id="imagenubi">
+                                    Madrid | España</h6>
+                            </div>
+                            <div class="form-group">
+                                <br><label>Nombre y Apellidos</label>
+                                <input class="form-control" type="text" id="nombre" name="nombre"
+                                    placeholder="Introduce el nombre de usuario">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-between">
+                            <div class="col-md-5">
+                                <br><label>Nº Teléfono</label>
+                                <input class="form-control" type="number" id="tel" name="tel">
+                                <br><label>País</label>
+                                <select class="form-control form-select" aria-label="">
+                                    <option selected>-- Selecciona --</option>
+                                    <option value="1">España</option>
+                                    <option value="2">Mexico</option>
+                                    <option value="3">Argentina</option>
+                                </select>
+                                <br><label>Traslado</label>
+                                <select class="form-control form-select" aria-label="">
+                                    <option selected>-- Selecciona --</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <br><label>Email</label>
+                                <input class="form-control" type="email" id="email" name="email"
+                                    placeholder="Introduce tu correo">
+                                <br><label>Ciudad</label>
+                                <select class="form-control form-select" aria-label="">
+                                    <option selected>-- Selecciona --</option>
+                                    <option value="1">Barcelona</option>
+                                    <option value="2">Madrid</option>
+                                    <option value="3">Valencia</option>
+                                </select>
+                                <br><label>Presencialidad</label>
+                                <select class="form-control form-select" aria-label="">
+                                    <option selected>-- Selecciona --</option>
+                                    <option value="1">En remoto</option>
+                                    <option value="2">En presencial</option>
+                                    <option value="3">Ambas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-between">
+                            <div class="col-md-6">
+                                <br><label>Documento CV</label>
+                                <br>
+                                <div class="drag-drop">
+                                    <label><img id="imagennube" src="image/cloud-computing.png" class="img-responsive"
+                                            alt="Responsive image"> Subir de nuevo</label>
+                                    <br><input type="file" name="adjunto" accept=".pdf" id="adjunto">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <br><br><button id="botonborrar" class="btn btn-light" onclick="Borrar()">
+                                    <img id="imagenborrar" src="image/trash.png" class="img-responsive"
+                                        alt="Responsive image"> Borrar</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row justify-content-between">
+                            <label>Etiquetas</label>
+                            <select class="etiquetas" multiple="multiple">
+                                <option value="" disabled>Please select</option>
+                                <option value="1">Html&Css</option>
+                                <option value="2">JavaScript</option>
+                                <option value="3">React</option>
+                                <option value="4">Java</option>
+                                <option value="5">Spring</option>
+                            </select>
+                        </div>
+                    </form>
+                    <br><iframe src="docs/Jose David Prieto Suarez 2022.pdf" style="width:100%; height:700px;" 
+                    frameborder="0" >PDF</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+$('select').change(function() {
+     if ($(this).children('option:first-child').is(':selected')) {
+       $(this).addClass('etiquetas');
+     } else {
+      $(this).removeClass('etiquetas');
+     }
+    });
+
+    $(document).ready(function() {
+    $('.etiquetas').select2();
+});
+</script>
