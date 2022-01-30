@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    font-family: raleway;
+    font-size: 12px;
+}
+
+@font-face { /* Con este atributo cargo la letra que quiero utilizar */
+    font-family: 'raleway';
+    src:  url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #F8F8F9 !important;
+}
+
+.container {
+    width: 70% !important;
+    margin-top: 3em;
+}
+
+#alumnos {
+    color: #32D4A4;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table {
+        background-color: white;
+        border-collapse: separate;
+        border: 1px solid #a7a7a7;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 2px;
+}
+
+thead {
+    color: #A5A8B3;
+}
+
+
+.etiquetas {
+    padding: 3%;
+    background-color: #32D4A4;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
