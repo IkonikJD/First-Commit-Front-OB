@@ -1,6 +1,6 @@
 # First-Commit-Front-OB
 
-En este repositorio he guardado todos los ejercicios que componen el primer sprint del proyecto First Commmit de OpenBootcamp de la parte de Front, utilizando principalmente Hyml, Css y Javascript. Ademas de maquetar casi todos los ejercicios utilizando BootStrap. Tambien he añadido algunas funciones utilizando JQuery.
+En este repositorio he guardado todos los ejercicios que componen el primer sprint del proyecto First Commmit de OpenBootcamp de la parte de Front, utilizando principalmente Html, Css y Javascript. Ademas de maquetar casi todos los ejercicios utilizando BootStrap. Tambien he añadido algunas funciones utilizando JQuery.
 
 # Autor ✒️
 
